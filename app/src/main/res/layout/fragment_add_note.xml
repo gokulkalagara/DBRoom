@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:clickable="true"
+        android:background="#99000000"
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".components.notes.AddNoteFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:id="@+id/llLayout"
+            android:clickable="true"
+            android:padding="15dp"
+            android:background="#FFFFFF"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="15dp"
+                android:id="@+id/etTitle"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="15dp"
+                android:inputType="textPostalAddress"
+                android:id="@+id/etDescription"
+                android:hint="Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tvSubmit"
+                android:layout_marginBottom="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@color/colorAccent"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="CREATE"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+
+
+
+        </LinearLayout>
+
+        <ProgressBar
+
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:indeterminate="true"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+</layout>
